@@ -1,8 +1,9 @@
 logs/*
-!.gitkeep
+!.g
 node_modules/
 bower_components/
 tmp
 .DS_Store
 .idea
+npm-debug.log
 workspace
