@@ -7,7 +7,6 @@
 		"type": "git",
 		"url": "https://github.com/fluffybunnies/magicmike-angular.git"
 	},
-	"license": "MIT",
 	"devDependencies": {
     "karma": "^0.12.16",
     "karma-chrome-launcher": "^0.1.4",
@@ -23,7 +22,6 @@
     "postinstall": "bower install",
 
     "prestart": "npm install",
-    "xstart": "http-server -a 0.0.0.0 -p 8000",
     "start": "/usr/local/bin/node api.js & http-server -a 0.0.0.0 -p 8000",
 
     "pretest": "npm install",
