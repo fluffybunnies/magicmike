@@ -1,18 +1,21 @@
 
 var http = require('http')
 ,url = require('url')
-,cool = require('cool-ascii-faces')
+,smile = require('cool-ascii-faces')
 ;
 
 
 http.createServer(function(req,res){
 	var r = url.parse(req.url);
-	if (r.pathname == '/face') {
-		var face = cool();
+	res.setHeader('Access-Control-Allow-Origin','http://localhost:8000');
+	if (r.pathname == '/api/smile') {
+		var face = smile();
 		console.log(face);
-		res.setHeader('Content-Type','text/json')
+		res.setHeader('Content-Type','text/json');
 		//return res.end(new Buffer(face,'utf-8'));
-		return res.end(face);
+		return res.end(JSON.stringify({
+			text: face
+		}));
 	}
 	res.end(':(');
 })
