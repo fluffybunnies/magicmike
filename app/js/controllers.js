@@ -11,7 +11,7 @@ mikeControllers.controller('MikeCtrl', ['$scope', '$http', function($scope, $htt
 	$scope.speech = null;
 	$scope.speak = function(){
 		if (++speakCount%2) {
-			$scope.speech = 'No.';
+			$scope.speech = 'n0.';
 		} else {
 			$scope.speech = cool();
 		}
