@@ -2,13 +2,14 @@
 	<div class="row">
 
 		<div class="col-md-12">
-			<div class="magic-mike" ng-mouseenter="speak()" ng-mouseleave="shh()">
+			<div class="page-title">Angular</div>
+			<div class="magic-mike">
 				<div class="bubble" ng-show="speech !== null">
 					<div class="bubble-inner">
 						<div class="bubble-text">{{speech}}</div>
 					</div>
 				</div>
-				<img class="mike" src="img/mike.jpg" alt="" />
+				<img class="mike" src="img/mike.jpg" alt="" ng-mouseenter="speak()" ng-mouseleave="shh()" />
 			</div>
 		</div>
 
