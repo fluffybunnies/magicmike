@@ -1,11 +1,11 @@
 {
-	"name": "magicmike",
+	"name": "magicmike-angular",
 	"version": "0.0.0",
 	"description": "A Tribute",
 	"author": "Alec Hulce",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/fluffybunnies/magicmike"
+		"url": "https://github.com/fluffybunnies/magicmike-angular.git"
 	},
 	"license": "MIT",
 	"devDependencies": {
