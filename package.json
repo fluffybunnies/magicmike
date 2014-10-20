@@ -24,6 +24,7 @@
 
     "prestart": "npm install",
     "start": "http-server -a 0.0.0.0 -p 8000",
+    "xstart": "/usr/local/bin/node api.js",
 
     "pretest": "npm install",
     "test": "node node_modules/karma/bin/karma start test/karma.conf.js",
